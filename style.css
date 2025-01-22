@@ -2,24 +2,41 @@ body{
     font-family: 'Times New Roman', Times, serif;
     margin: 20px;
     background-color: antiquewhite;
+    
 }
 form{
     max-width: fit-content;
     margin: auto;
     padding: 20px;
-    background-color: slategray;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    background-color: darkolivegreen;
+    border-radius: 20px;
+    box-shadow:
+    2.7px 2.8px 2.2px rgba(0, 0, 0, 0.031),
+    6.5px 6.7px 5.3px rgba(0, 0, 0, 0.044),
+    12.3px 12.5px 10px rgba(0, 0, 0, 0.055),
+    21.9px 22.3px 17.9px rgba(0, 0, 0, 0.066),
+    40.9px 41.8px 33.4px rgba(0, 0, 0, 0.079),
+    98px 100px 80px rgba(0, 0, 0, 0.11)
+  ;
 }
 label{
     font-weight: bold;
 }
-input,textarea,select,button{
+select,button{
     width: 100%;
     margin:auto;
-    padding: 20px;
+    padding: 20px 20px;
     border: 1px solid #ccc;
     border-radius: 4px;
+}
+input,textarea{
+    width: 100%;
+    margin:auto;
+    padding: 20px 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: none;
 }
 button{
     background-color:darkolivegreen;
@@ -27,3 +44,24 @@ button{
 button:hover{
     background-color:bisque;
 }
+.hover-grw{
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+}
+.parent {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    
+    
+

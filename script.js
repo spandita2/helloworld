@@ -75,3 +75,12 @@ submitBtn.addEventListener('click', () => {
         form.reset();
     }
 });
+const feedbackForm=
+document.getElementById('feedbackForm')
+feedbackForm.addEventListener('submit',(event)=>{
+    event.preventDefault();
+    window.location.href='thankyou.html'
+});
+document.getElementById("submitBtn").onclick = function () {
+    location.href = "thankyou.html";
+};
